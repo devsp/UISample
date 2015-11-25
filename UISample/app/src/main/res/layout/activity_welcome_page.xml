@@ -25,9 +25,9 @@
        android:background="@android:color/transparent"
        android:scaleType="fitXY"
        android:onClick="booktrip"
-       android:layout_alignTop="@+id/btnevent"
-       android:layout_toStartOf="@+id/imageView"
-       android:id="@+id/btnbookatrip" />
+       android:id="@+id/btnbookatrip"
+       android:layout_alignTop="@+id/btntop"
+       android:layout_toStartOf="@+id/imageView" />
 
 
 
@@ -37,11 +37,10 @@
         android:src="@drawable/top"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:id="@+id/btnevent"
-        android:onClick="event"
-        android:layout_marginTop="23dp"
+        android:id="@+id/btntop"
         android:layout_below="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView" />
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="30dp" />
 
     <ImageButton
         android:layout_height="100dp"
@@ -49,10 +48,11 @@
         android:src="@drawable/event"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:layout_marginTop="34dp"
-        android:id="@+id/imageButton4"
-        android:layout_below="@+id/btnbookatrip"
-        android:layout_alignStart="@+id/btnbookatrip" />
+        android:id="@+id/btnevent"
+        android:onClick="event"
+        android:layout_above="@+id/btngroupplanner"
+        android:layout_alignStart="@+id/btngroupplanner"
+        android:layout_marginBottom="24dp" />
 
     <ImageButton
         android:layout_height="100dp"
@@ -60,9 +60,10 @@
         android:src="@drawable/search"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:layout_alignTop="@+id/imageButton4"
-        android:layout_alignStart="@+id/btnevent"
-        android:id="@+id/imageButton5" />
+        android:onClick="searchnearby"
+        android:id="@+id/btnsearchnearby"
+        android:layout_alignTop="@+id/btnevent"
+        android:layout_toEndOf="@+id/imageView" />
 
     <ImageButton
         android:layout_height="100dp"
@@ -70,10 +71,10 @@
         android:src="@drawable/group"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageButton4"
-        android:layout_marginBottom="28dp"
-        android:id="@+id/imageButton6" />
+
+        android:id="@+id/btngroupplanner"
+        android:layout_alignTop="@+id/btnreview"
+        android:layout_alignStart="@+id/btnbookatrip" />
 
     <ImageButton
         android:layout_height="100dp"
@@ -81,8 +82,11 @@
         android:src="@drawable/rate"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:layout_alignTop="@+id/imageButton6"
-        android:layout_alignStart="@+id/imageButton5" />
+        android:layout_marginBottom="35dp"
+        android:onClick="review"
+        android:id="@+id/btnreview"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnsearchnearby" />
 
 
     <ImageButton
@@ -90,10 +94,11 @@
         android:layout_width="50dp"
         android:src="@drawable/user2"
         android:scaleType="fitXY"
+        android:id="@+id/btnProfile"
+        android:onClick="profile"
         android:background="@android:color/transparent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/imageButton12" />
+        android:layout_toEndOf="@+id/btnreview" />
 
 
 </RelativeLayout>

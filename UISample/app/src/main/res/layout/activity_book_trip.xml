@@ -25,7 +25,8 @@
         android:src="@drawable/home"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:id="@+id/imageButton13"
+        android:id="@+id/btnhomeBT"
+        android:onClick="goHome"
         android:layout_above="@+id/searchView"
         android:layout_alignEnd="@+id/searchView" />
 

@@ -1,9 +1,13 @@
 package com.example.sanjanapillai.uisample;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -34,4 +38,18 @@ public class RegisterActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    public void gotoSignin(View view){
+        Button register = (Button)findViewById(R.id.signinRegister);
+        Intent registerintent = new Intent(RegisterActivity.this, SigninAcitivty.class);
+        startActivity(registerintent);
+    }
+
+    public void goBack(View view){
+        ImageButton backArrow = (ImageButton)findViewById(R.id.backArrow);
+        Intent gobackIntent = new Intent(RegisterActivity.this, MainActivity.class);
+        startActivity(gobackIntent);
+    }
+
 }

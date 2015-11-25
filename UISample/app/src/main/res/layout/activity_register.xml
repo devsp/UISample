@@ -79,19 +79,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/leftarrow"
+        
         android:background="@android:color/transparent"
         android:layout_below="@+id/gridLayout"
         android:layout_alignStart="@+id/gridLayout"
         android:layout_marginTop="23dp"
-        android:id="@+id/imageButton" />
+        android:id="@+id/backArrow"
+        android:onClick="goBack"
+        />
 
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:id="@+id/signinRegister"
+        android:onClick="gotoSignin"
         android:backgroundTint="#0d0f04"
         android:textColor="#ff1a47"
-        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignTop="@+id/backArrow"
         android:layout_alignEnd="@+id/gridLayout" />
 
 

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class WelcomePage extends AppCompatActivity {
@@ -58,5 +59,23 @@ public class WelcomePage extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void searchnearby(View view){
+        ImageButton searchnearby = (ImageButton)findViewById(R.id.btnsearchnearby);
+        Intent searchnearbyIntent = new Intent(WelcomePage.this, SearchNearbyActivity.class);
+        startActivity(searchnearbyIntent);
+    }
+
+    public void review(View view){
+        ImageButton review = (ImageButton)findViewById(R.id.btnreview);
+        Intent reviewIntent = new Intent(WelcomePage.this, ReviewActivity.class);
+        startActivity(reviewIntent);
+    }
+
+    public void profile(View view){
+        ImageButton profile = (ImageButton)findViewById(R.id.btnProfile);
+        Intent profileIntent = new Intent(WelcomePage.this, ProfileActivity.class);
+        startActivity(profileIntent);
     }
 }
