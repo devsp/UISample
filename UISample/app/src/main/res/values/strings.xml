@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">UISample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name = "white">#FFFFFF</color>
+    <string name="title_activity_signin_acitivty">SigninAcitivty</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_homepage">HomepageActivity</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+
+    <string name="sq_prompt">Choose a Security Question</string>
+
+    <string-array name="securityQuestionArray">
+        <item>Security Question</item>
+        <item>What is your mothers maiden name</item>
+        <item>What is the name of your first pet?</item>
+        <item>What is the name of your elementary school?</item>
+    </string-array>
+    <string name="title_activity_register2">Register2Activity</string>
+    <string name="title_activity_welcome_page">WelcomePage</string>
+    <string name="title_activity_book_trip">BookTripActivity</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <string name="title_activity_music_list_view">MusicListViewActivity</string>
+    <string name="title_activity_search_nearby">SearchNearbyActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_review">ReviewActivity</string>
+</resources>
