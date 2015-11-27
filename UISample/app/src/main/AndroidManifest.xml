@@ -81,6 +81,22 @@
             android:name=".ReviewActivity"
             android:label="@string/title_activity_review" >
         </activity>
+        <activity
+            android:name=".RestaurantActivity"
+            android:label="@string/title_activity_restaurant" >
+        </activity>
+        <activity
+            android:name=".EastSideActivity"
+            android:label="@string/title_activity_east_side" >
+        </activity>
+        <activity
+            android:name=".EastSide2Activity"
+            android:label="@string/title_activity_east_side2" >
+        </activity>
+        <activity
+            android:name=".AddtoTripActivity"
+            android:label="@string/title_activity_addto_trip" >
+        </activity>
     </application>
 
 </manifest>

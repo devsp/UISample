@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.sanjanapillai.uisample.RestaurantActivity">
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="Restaurants"
+        android:background="#191516"
+        android:textSize="23dp"
+        android:textColor="#a4c639"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:id="@+id/textView" />
+
+    <ImageButton
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/home"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:id="@+id/imageButton13"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/earlslogo"
+
+        android:background="#191516"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0d0f04"
+        android:textStyle="bold"
+        android:text="Earl's "
+        android:textSize="23dp"
+        android:gravity="top"
+        android:typeface="sans"
+        android:textColor="#d8002a"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageButton13"
+        android:id="@+id/button2" />
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="125 John Street W | London, Ontario | X4E 2Y5"
+        android:textColor="@color/white"
+
+        android:layout_below="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/eastside"
+
+        android:background="#191516"
+
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView6" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0d0f04"
+        android:textStyle="bold"
+        android:gravity="top"
+        android:text="East Side Marios "
+        android:textSize="23dp"
+        android:typeface="sans"
+        android:textColor="#d8002a"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnEastSide"
+        android:onClick="gotoEastSide"/>
+
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="59322 Third Avenue | London, Ontario | S4T 2H6"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnEastSide"
+        android:layout_alignEnd="@+id/btnEastSide"
+        />
+
+
+</RelativeLayout>

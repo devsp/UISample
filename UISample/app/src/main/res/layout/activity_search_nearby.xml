@@ -79,7 +79,8 @@
         android:layout_marginTop="57dp"
         android:layout_below="@+id/imageButton5"
         android:layout_alignParentStart="true"
-        android:id="@+id/imageButton9" />
+        android:id="@+id/btnRestaurant"
+        android:onClick="gotoRestaurant"/>
 
     <ImageButton
         android:layout_height="100dp"
@@ -87,7 +88,7 @@
         android:src="@drawable/bar"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:layout_alignTop="@+id/imageButton9"
+        android:layout_alignTop="@+id/btnRestaurant"
         android:layout_alignStart="@+id/imageButton8"
         android:id="@+id/imageButton11" />
 

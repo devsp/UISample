@@ -28,4 +28,8 @@
     <string name="title_activity_search_nearby">SearchNearbyActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_review">ReviewActivity</string>
+    <string name="title_activity_restaurant">RestaurantActivity</string>
+    <string name="title_activity_east_side">EastSideActivity</string>
+    <string name="title_activity_east_side2">EastSide2Activity</string>
+    <string name="title_activity_addto_trip">AddtoTripActivity</string>
 </resources>

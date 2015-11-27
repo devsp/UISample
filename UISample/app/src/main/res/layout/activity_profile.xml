@@ -79,18 +79,61 @@
         android:textColor="#0d0f04"
         android:layout_below="@+id/textView8"
         android:layout_alignStart="@+id/textView8" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Trips"
-        android:background="#191516"
-        android:textSize="23dp"
-        android:textColor="#a4c639"
-        android:gravity="center"
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Your Trip"
+        android:background="#aadd61"
+        android:backgroundTint="#0d0f04"
         android:textStyle="bold"
         android:typeface="sans"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:onClick="validate"
+        android:theme="@android:style/Holo.ButtonBar"
+        android:id="@+id/btnSignIn"
+        android:textColor="#ff1a47"
+        android:textSize="23dp"
+
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Your Reviews"
+        android:background="#aadd61"
+        android:backgroundTint="#0d0f04"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:onClick="validate"
+        android:theme="@android:style/Holo.ButtonBar"
+
+        android:textColor="#ff1a47"
+        android:textSize="23dp"
+
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_alignStart="@+id/btnSignIn"
+        android:id="@+id/button4" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Your Bookings"
+        android:background="#aadd61"
+        android:backgroundTint="#0d0f04"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:onClick="validate"
+        android:theme="@android:style/Holo.ButtonBar"
+
+        android:textColor="#ff1a47"
+        android:textSize="23dp"
+
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+
 
 
 </RelativeLayout>
